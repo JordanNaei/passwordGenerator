@@ -29,7 +29,7 @@ function generatePassword() {
     alert(
       "'You entered an invalid number of characters, please refresh the page and provide a number between 8-128?"
     );
-    return;
+    return ("Click Generate Password Button Agian");
   }
   includeUpper = confirm(
     "Do you need your password to have Uppercase Letters?"
