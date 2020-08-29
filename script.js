@@ -31,7 +31,7 @@ function generatePassword() {
       console.log("sakoo");
     } else {
       alert(
-        "'You entered an invalid number, please hit Ok to and click the Generate Password Button again and provide a valid entry"
+        "'You entered an invalid number of characters, please hit Ok, then click the Generate Password Button again and provide a valid entry"
       );
       return "Click Generate Password Button Again";
     }
