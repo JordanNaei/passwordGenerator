@@ -25,25 +25,25 @@ function generatePassword() {
   superarray = [];
 
   // Number of charaters prompt and validation using console log for debugging purposes
-  numberOfChar = prompt("Pick a desired number of characters between 8-128");
+  numberOfChar = prompt("Pick a desired number of characters between 8-128, for your Password ?!");
   console.log(numberOfChar);
     if (numberOfChar >= 8 && numberOfChar <= 128) {
       console.log("sakoo");
     } else {
       alert(
-        "'You entered an invalid number of characters, please refresh the page and provide a number between 8-128?"
+        "'You entered an invalid number, please hit Ok to and click the Generate Password Button again and provide a valid entry"
       );
-      return "Click Generate Password Button Agian";
+      return "Click Generate Password Button Again";
     }
 
 // geting the rest of the input elements
-    includeUpper = confirm("Do you need your password to have Uppercase Letters?");
+    includeUpper = confirm("Do you need your password to include Uppercase Letters?");
     console.log(includeUpper);
-    includeLower = confirm("Do you need your password to have Lowercase Letters?");
+    includeLower = confirm("Do you need your password to include Lowercase Letters?");
     console.log(includeLower);
-    includeSymbols = confirm("Do you need your password to have Symbols?");
+    includeSymbols = confirm("Do you need your password to include Symbols?");
     console.log(includeSymbols);
-    includeNumbers = confirm("Do you need your password to have Numbers?");
+    includeNumbers = confirm("Do you need your password to include Numbers?");
     console.log(includeNumbers);
 // validate the negative scenario
       if (
@@ -52,8 +52,8 @@ function generatePassword() {
         includeSymbols === false &&
         includeUpper === false
       ) {
-        alert("At least one category need to be selected");
-        return;
+        alert("At least one charater's category need to be selected to generate a Password");
+        return "Your password must have at least one charater's category, please click the Generate Password Button again and provide a valid entry.";
       } else {
         console.log("sakoo");
       }
